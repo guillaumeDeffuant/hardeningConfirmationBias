@@ -6,6 +6,7 @@ At each consultation, the content is chosen at random in a set of available cont
 Tow models are included:
 - The bounded confidence (BC) model
 - The Persuasive Argument (PA) model
+
 In each model, the main assumption is that the confirmation bias hardens when the opinion gets more extreme.
 The main result is that, ageents consulting abundant information tend to get extreme opinions.
 When running the scripts, the user can run indidual trajectorties and visualise them or run numerous trajectoires and visualise the resulting distribution of opinions
