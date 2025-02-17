@@ -1,5 +1,5 @@
 # hardeningConfirmationBias
-The R script file BCAndPAModels.R includes the models studied in the paper entitled "How opinions get more extreme in an era of information abundance"
+The R script file "BCAndPAModels.R" includes the models studied in the paper entitled "How opinions get more extreme in an era of information abundance"
 by Guillaume Deffuant, Marijn Keijzer and Sven Banisch.
 It can be run on an R platform like RStudio.
 
