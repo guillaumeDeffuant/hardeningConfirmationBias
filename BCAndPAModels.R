@@ -237,8 +237,10 @@ trajPAT = function(steps, N, beta, prejud = 0, visu = FALSE){
     if (visu){
       for(ii in 1:nta){
         xx = ii/nta
-        if(bn[ii] == ll$bn[ii]) lines(c(-xx, -xx), c(i-1, i), col = cl[bn[ii]+1], lwd = 2)
-        if(bp[ii] == ll$bp[ii]) lines(c(xx, xx), c(i-1, i), col = cl[bp[ii]+1], lwd = 2)
+        #if(bn[ii] == ll$bn[ii]) lines(c(-xx, -xx), c(i-1, i), col = cl[bn[ii]+1], lwd = 2)
+        if(bn[ii] == ll$bn[ii] & bn[ii] == 1) points(-xx, i, col = cl[bn[ii]+1], pch = 16, cex = 0.2)
+        #if(bp[ii] == ll$bp[ii]) lines(c(xx, xx), c(i-1, i), col = cl[bp[ii]+1], lwd = 2)
+        if(bp[ii] == ll$bp[ii] & bp[ii] == 1) points(xx, i, col = cl[bp[ii]+1], pch = 16, cex = 0.2)
       }
       points(ll$arg/nta, i, pch = pch[ll$bel+1], col = 'darkgreen', lwd = 2)
     }
@@ -254,7 +256,6 @@ trajPAT = function(steps, N, beta, prejud = 0, visu = FALSE){
   }
   return(list('attitude' = traja, "belief" = trajb))
 }
-
 
 
 #-------------------------
